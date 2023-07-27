@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="- Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeemanagementsystem1.HelloController">
+    <children>
+        <Label layoutX="29.0" layoutY="25.0" text="EMPLOYEE MANAGEMENT SYSTEM" textFill="#262728">
+            <font>
+                <Font name="Berlin Sans FB" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="71.0" layoutY="83.0" text="Id" textFill="#1f2ed1">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="51.0" layoutY="123.0" text="FirstName" textFill="#1838d9">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="155.0" text="LastName" textFill="#1c13bc">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="71.0" layoutY="192.0" text="Salary" textFill="#190fa4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="55.0" layoutY="231.0" text="Department" textFill="#390f89">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="t1" layoutX="135.0" layoutY="79.0" />
+        <TextField fx:id="t2" layoutX="137.0" layoutY="118.0" />
+
+        <TextField fx:id="t3" layoutX="137.0" layoutY="152.0" />
+        <TextField fx:id="t4" layoutX="137.0" layoutY="188.0" />
+        <Button fx:id="ib1" layoutX="358.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleButtonaction" text="Insert" textFill="#4213d9">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="ub2" layoutX="353.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleButtonaction" text="Update" textFill="#1d43b4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="db3" layoutX="355.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleButtonaction" text="Delete" textFill="#4a20e1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableemployees" layoutX="38.0" layoutY="320.0" prefHeight="190.0" prefWidth="422.0">
+            <columns>
+                <TableColumn fx:id="idt1" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="fnt2" prefWidth="119.20001220703125" text="First Name" />
+                <TableColumn fx:id="lnt3" prefWidth="68.0" text="Last Name" />
+                <TableColumn fx:id="st4" prefWidth="72.800048828125" text="Salary" />
+                <TableColumn fx:id="dt5" prefWidth="83.99993896484375" text="Department" />
+            </columns>
+        </TableView>
+        <TextField fx:id="t5" layoutX="141.0" layoutY="228.0" />
+    </children>
+    <effect>
+        <Blend>
+            <topInput>
+                <ColorAdjust />
+            </topInput>
+        </Blend>
+    </effect>
+</AnchorPane>
+
